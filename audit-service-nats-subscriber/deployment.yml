@@ -1,0 +1,21 @@
+apiVersion: apps/v1 
+kind: Deployment    
+metadata:              
+  name: springboot-database-profiles
+spec:                
+  selector:         
+    matchLabels:
+      app: springboot-database-profiles
+  replicas: 3        
+  template:
+    metadata:
+      labels:        
+        app: springboot-database-profiles
+    spec:
+      containers:
+        - name: springboot-database-profiles
+          image: localhost:5000/springboot-database-profiles
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 9385
+

@@ -1,0 +1,188 @@
+2021-02-19 08:27:09 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 3484 (D:\JuniorBatch\workspace\juniors\audit-service\target\classes started by vinodh.sangavaram in D:\JuniorBatch\workspace\juniors\audit-service)
+2021-02-19 08:27:09 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-02-19 08:27:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2021-02-19 08:27:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2021-02-19 08:27:18 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 9.29 seconds (JVM running for 10.96)
+2021-02-19 08:27:18 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully  : 
+2021-02-19 08:27:41 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:53:35 [http-nio-9686-exec-3] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:09 [http-nio-9686-exec-4] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:12 [http-nio-9686-exec-5] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:13 [http-nio-9686-exec-6] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:15 [http-nio-9686-exec-7] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:17 [http-nio-9686-exec-8] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:18 [http-nio-9686-exec-10] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:21 [http-nio-9686-exec-9] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:22 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:24 [http-nio-9686-exec-1] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:26 [http-nio-9686-exec-3] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:45 [http-nio-9686-exec-4] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:47 [http-nio-9686-exec-5] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:49 [http-nio-9686-exec-6] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:50 [http-nio-9686-exec-7] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:54:54 [http-nio-9686-exec-8] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:55:46 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2021-02-19 08:55:46 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2021-02-19 08:55:47 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 3484 (D:\JuniorBatch\workspace\juniors\audit-service\target\classes started by vinodh.sangavaram in D:\JuniorBatch\workspace\juniors\audit-service)
+2021-02-19 08:55:47 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-02-19 08:55:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Starting...
+2021-02-19 08:55:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Start completed.
+2021-02-19 08:55:52 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 5.25 seconds (JVM running for 1724.961)
+2021-02-19 08:55:52 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully  : 
+2021-02-19 08:56:11 [http-nio-9686-exec-1] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 08:56:11 [http-nio-9686-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper -ERROR: duplicate key value violates unique constraint "audit_log_pkey"
+  Detail: Key (user_id)=(1) already exists.
+2021-02-19 08:56:11 [http-nio-9686-exec-1] ERROR o.h.i.ExceptionMapperStandardImpl -HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2021-02-19 08:56:11 [http-nio-9686-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [audit_log_pkey]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "audit_log_pkey"
+  Detail: Key (user_id)=(1) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2510)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2245)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:311)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:447)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:368)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:159)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:125)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3176)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3690)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:90)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:478)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:356)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1454)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:511)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2486)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:473)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:178)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:39)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:271)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:104)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:746)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:534)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:305)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:144)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$ExposeRepositoryInvocationInterceptor.invoke(CrudMethodMetadataPostProcessor.java:364)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy103.save(Unknown Source)
+	at com.vinodh.service.AuditService.saveUser(AuditService.java:18)
+	at com.vinodh.controller.AuditController.addUser(AuditController.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-19 08:56:58 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Shutdown initiated...
+2021-02-19 08:56:58 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Shutdown completed.
+2021-02-19 08:56:59 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 3484 (D:\JuniorBatch\workspace\juniors\audit-service\target\classes started by vinodh.sangavaram in D:\JuniorBatch\workspace\juniors\audit-service)
+2021-02-19 08:56:59 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-02-19 08:56:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-3 - Starting...
+2021-02-19 08:57:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-3 - Start completed.
+2021-02-19 08:57:00 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 1.953 seconds (JVM running for 1793.149)
+2021-02-19 08:57:00 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully  : 
+2021-02-19 08:57:08 [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-3 - Shutdown initiated...
+2021-02-19 08:57:08 [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-3 - Shutdown completed.
+2021-02-19 08:57:08 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 3484 (D:\JuniorBatch\workspace\juniors\audit-service\target\classes started by vinodh.sangavaram in D:\JuniorBatch\workspace\juniors\audit-service)
+2021-02-19 08:57:08 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-02-19 08:57:09 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-4 - Starting...
+2021-02-19 08:57:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-4 - Start completed.
+2021-02-19 08:57:14 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 5.229 seconds (JVM running for 1806.255)
+2021-02-19 08:57:14 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully  : 
+2021-02-19 09:24:34 [http-nio-9686-exec-1] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 09:24:34 [http-nio-9686-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase -HikariPool-4 - Failed to validate connection org.postgresql.jdbc.PgConnection@2bbcf38d (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2021-02-19 09:24:34 [http-nio-9686-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase -HikariPool-4 - Failed to validate connection org.postgresql.jdbc.PgConnection@53fbeb98 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2021-02-19 09:24:34 [http-nio-9686-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase -HikariPool-4 - Failed to validate connection org.postgresql.jdbc.PgConnection@7e99f56 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2021-02-19 09:24:34 [http-nio-9686-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase -HikariPool-4 - Failed to validate connection org.postgresql.jdbc.PgConnection@4b0524bd (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2021-02-19 09:24:34 [http-nio-9686-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase -HikariPool-4 - Failed to validate connection org.postgresql.jdbc.PgConnection@44545549 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2021-02-19 09:24:34 [http-nio-9686-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase -HikariPool-4 - Failed to validate connection org.postgresql.jdbc.PgConnection@48ffc170 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2021-02-19 09:24:34 [http-nio-9686-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase -HikariPool-4 - Failed to validate connection org.postgresql.jdbc.PgConnection@3a7e416 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2021-02-19 09:24:34 [http-nio-9686-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase -HikariPool-4 - Failed to validate connection org.postgresql.jdbc.PgConnection@61651813 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2021-02-19 09:24:34 [http-nio-9686-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase -HikariPool-4 - Failed to validate connection org.postgresql.jdbc.PgConnection@7fdf76b (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2021-02-19 09:24:34 [http-nio-9686-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase -HikariPool-4 - Failed to validate connection org.postgresql.jdbc.PgConnection@313f42a5 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2021-02-19 09:25:53 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 09:32:59 [http-nio-9686-exec-3] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 09:39:46 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-4 - Shutdown initiated...
+2021-02-19 09:39:46 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-4 - Shutdown completed.
+2021-02-19 09:39:47 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 3484 (D:\JuniorBatch\workspace\juniors\audit-service\target\classes started by vinodh.sangavaram in D:\JuniorBatch\workspace\juniors\audit-service)
+2021-02-19 09:39:47 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-02-19 09:39:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-5 - Starting...
+2021-02-19 09:39:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-5 - Start completed.
+2021-02-19 09:39:52 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 5.61 seconds (JVM running for 4365.149)
+2021-02-19 09:39:52 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully  : 
+2021-02-19 09:39:57 [Thread-49] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-5 - Shutdown initiated...
+2021-02-19 09:39:57 [Thread-49] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-5 - Shutdown completed.
+2021-02-19 09:39:57 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 3484 (D:\JuniorBatch\workspace\juniors\audit-service\target\classes started by vinodh.sangavaram in D:\JuniorBatch\workspace\juniors\audit-service)
+2021-02-19 09:39:57 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-02-19 09:39:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-6 - Starting...
+2021-02-19 09:39:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-6 - Start completed.
+2021-02-19 09:40:04 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 6.308 seconds (JVM running for 4376.302)
+2021-02-19 09:40:04 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully  : 
+2021-02-19 09:43:27 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 09:56:24 [http-nio-9686-exec-3] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-19 19:39:44 [RMI TCP Connection(703)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-6 - Shutdown initiated...
+2021-02-19 19:39:44 [RMI TCP Connection(703)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-6 - Shutdown completed.

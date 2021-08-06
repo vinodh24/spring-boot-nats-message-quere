@@ -1,0 +1,151 @@
+2021-04-28 15:18:11 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 14180 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber)
+2021-04-28 15:18:11 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-04-28 15:18:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2021-04-28 15:18:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2021-04-28 15:18:18 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@40339b15
+2021-04-28 15:18:19 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2021-04-28 15:18:19 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2021-04-28 15:18:19 [restartedMain] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'natsInilizer' defined in file [D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber\target\classes\com\vinodh\config\NatsInilizer.class]: Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at com.vinodh.application.SpringDataBaseApplication.main(SpringDataBaseApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NullPointerException: null
+	at com.vinodh.config.NatsInilizer.afterPropertiesSet(NatsInilizer.java:55)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 21 common frames omitted
+2021-04-28 15:19:44 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 1076 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber)
+2021-04-28 15:19:44 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-04-28 15:19:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2021-04-28 15:19:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2021-04-28 15:19:51 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@7bb8628d
+2021-04-28 15:19:52 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 7.913 seconds (JVM running for 9.26)
+2021-04-28 15:19:52 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully  : 
+2021-04-28 15:24:09 [jnats-subscriptions] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 15:24:20 [jnats-subscriptions] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 15:30:16 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2021-04-28 15:30:16 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2021-04-28 15:30:17 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 1076 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber)
+2021-04-28 15:30:17 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-04-28 15:30:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Starting...
+2021-04-28 15:30:18 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Start completed.
+2021-04-28 15:30:22 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@678cdfc2
+2021-04-28 15:41:58 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 13900 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber)
+2021-04-28 15:41:58 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-04-28 15:41:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2021-04-28 15:42:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2021-04-28 15:42:05 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@1a222080
+2021-04-28 15:42:30 [jnats-subscriptions] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 15:42:30 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 733.313 seconds (JVM running for 1367.628)
+2021-04-28 15:42:30 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully  : 
+2021-04-28 15:42:30 [RMI TCP Connection(23)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Shutdown initiated...
+2021-04-28 15:42:30 [RMI TCP Connection(23)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Shutdown completed.
+2021-04-28 15:42:32 [jnats-subscriptions] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 15:42:32 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 15:42:33 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 35.174 seconds (JVM running for 36.639)
+2021-04-28 15:42:33 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully  : 
+2021-04-28 15:42:50 [jnats-subscriptions] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 15:43:39 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2021-04-28 15:43:39 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2021-04-28 15:43:39 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 13900 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber)
+2021-04-28 15:43:39 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-04-28 15:43:39 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Starting...
+2021-04-28 15:43:40 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Start completed.
+2021-04-28 15:43:44 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@4e922c95
+2021-04-28 15:51:35 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 10848 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-subscriber)
+2021-04-28 15:51:35 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-04-28 15:51:36 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2021-04-28 15:51:37 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2021-04-28 15:51:42 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@4c7429d4
+2021-04-28 15:51:42 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 7.747 seconds (JVM running for 9.244)
+2021-04-28 15:51:42 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully  : 
+2021-04-28 15:51:49 [jnats-subscriptions] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 15:51:49 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 15:51:49 [jnats-subscriptions] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 15:51:49 [restartedMain] ERROR o.apache.catalina.util.LifecycleBase -Failed to start component [Connector[HTTP/1.1-9687]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at com.vinodh.application.SpringDataBaseApplication.main(SpringDataBaseApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 19 common frames omitted
+2021-04-28 15:51:49 [RMI TCP Connection(16)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Shutdown initiated...
+2021-04-28 15:51:49 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9687 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9687, or configure this application to listen on another port.
+
+2021-04-28 15:51:49 [RMI TCP Connection(16)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Shutdown completed.
+2021-04-28 16:41:29 [jnats-subscriptions] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 16:41:29 [jnats-subscriptions] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 17:03:50 [jnats-subscriptions] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 17:03:50 [jnats-subscriptions] INFO  com.vinodh.config.NatsInilizer -Received message on AuditLog [user_id=null, username=Navya, password=vinodh, email=vinodh.sangavaram@velankani.com]
+2021-04-28 17:48:42 [jnats-callbacks] ERROR com.vinodh.config.NatsInilizer -Channel disconnected: io.nats.client.ConnectionImpl@678cdfc2
+2021-04-28 17:50:04 [jnats-callbacks] ERROR com.vinodh.config.NatsInilizer -Channel disconnected: io.nats.client.ConnectionImpl@4c7429d4
+2021-04-28 17:50:04 [jnats-callbacks] ERROR com.vinodh.config.NatsInilizer -Channel disconnected: io.nats.client.ConnectionImpl@7bb8628d
+2021-04-28 17:50:04 [jnats-callbacks] ERROR com.vinodh.config.NatsInilizer -Channel disconnected: io.nats.client.ConnectionImpl@4e922c95
+2021-04-28 17:50:04 [jnats-callbacks] ERROR com.vinodh.config.NatsInilizer -Channel disconnected: io.nats.client.ConnectionImpl@1a222080
+2021-04-28 17:50:40 [jnats-callbacks] ERROR com.vinodh.config.NatsInilizer -Channel disconnected: io.nats.client.ConnectionImpl@678cdfc2
+2021-04-28 17:52:02 [jnats-callbacks] ERROR com.vinodh.config.NatsInilizer -Channel disconnected: io.nats.client.ConnectionImpl@4e922c95
+2021-04-28 17:52:02 [jnats-callbacks] ERROR com.vinodh.config.NatsInilizer -Channel disconnected: io.nats.client.ConnectionImpl@1a222080
+2021-04-28 17:52:02 [jnats-callbacks] ERROR com.vinodh.config.NatsInilizer -Channel disconnected: io.nats.client.ConnectionImpl@7bb8628d
+2021-04-28 17:52:02 [jnats-callbacks] ERROR com.vinodh.config.NatsInilizer -Channel disconnected: io.nats.client.ConnectionImpl@4c7429d4
+2021-04-28 19:53:40 [RMI TCP Connection(256)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2021-04-28 19:53:40 [RMI TCP Connection(256)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.

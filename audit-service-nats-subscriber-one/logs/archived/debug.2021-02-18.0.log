@@ -1,0 +1,3 @@
+2021-02-18 22:03:59 [http-nio-9686-exec-1] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-02-18 22:07:18 [RMI TCP Connection(21)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-4 - Shutdown initiated...
+2021-02-18 22:07:18 [RMI TCP Connection(21)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-4 - Shutdown completed.

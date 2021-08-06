@@ -1,0 +1,244 @@
+2021-04-14 12:29:39 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 14624 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-14 12:29:39 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -The following profiles are active: postgres
+2021-04-14 12:29:40 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field natsConnection in com.vinodh.service.AuditService required a bean of type 'io.nats.client.Connection' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.nats.client.Connection' in your configuration.
+
+2021-04-14 12:30:20 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 15336 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-14 12:30:20 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-14 12:30:21 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field natsConnection in com.vinodh.service.AuditService required a bean of type 'io.nats.client.Connection' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.nats.client.Connection' in your configuration.
+
+2021-04-14 12:35:28 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 14380 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-14 12:35:28 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-14 12:35:29 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 1.763 seconds (JVM running for 2.985)
+2021-04-14 12:35:29 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-14 12:36:20 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 14380 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-14 12:36:20 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-14 12:36:20 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@6f517882
+2021-04-14 12:36:20 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 0.379 seconds (JVM running for 54.375)
+2021-04-14 12:36:20 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-14 13:35:05 [http-nio-9686-exec-4] INFO  c.vinodh.controller.AuditController -addUser save in verison :application.version
+2021-04-14 13:35:05 [http-nio-9686-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Failed to serialize object of type: class com.vinodh.model.AuditLog] with root cause
+java.io.NotSerializableException: com.vinodh.model.AuditLog
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185)
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
+	at org.springframework.util.SerializationUtils.serialize(SerializationUtils.java:47)
+	at com.vinodh.service.AuditService.publishMessage(AuditService.java:31)
+	at com.vinodh.service.AuditService.saveUser(AuditService.java:21)
+	at com.vinodh.controller.AuditController.addUser(AuditController.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-04-14 13:36:27 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 14380 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-14 13:36:27 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-14 13:36:27 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@64cc49e
+2021-04-14 13:36:27 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 0.322 seconds (JVM running for 3661.143)
+2021-04-14 13:36:27 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-14 13:36:30 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 14380 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-14 13:36:30 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-14 13:36:30 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@538a3c1c
+2021-04-14 13:36:30 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 0.274 seconds (JVM running for 3664.172)
+2021-04-14 13:36:30 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-14 13:36:34 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 14380 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-14 13:36:34 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-14 13:36:34 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@33fd7c1d
+2021-04-14 13:36:34 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 0.268 seconds (JVM running for 3668.292)
+2021-04-14 13:36:34 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-14 13:37:07 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 13:37:07 [http-nio-9686-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Failed to serialize object of type: class com.vinodh.model.AuditLog] with root cause
+java.io.NotSerializableException: com.vinodh.model.AuditLog
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185)
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
+	at org.springframework.util.SerializationUtils.serialize(SerializationUtils.java:47)
+	at com.vinodh.service.AuditService.publishMessage(AuditService.java:31)
+	at com.vinodh.service.AuditService.saveUser(AuditService.java:21)
+	at com.vinodh.controller.AuditController.addUser(AuditController.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-04-14 13:38:20 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 14380 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-14 13:38:20 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-14 13:38:20 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@524a7240
+2021-04-14 13:38:20 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 0.268 seconds (JVM running for 3774.006)
+2021-04-14 13:38:20 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-14 13:38:31 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 14380 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-14 13:38:31 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-14 13:38:31 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@5633dda4
+2021-04-14 13:38:31 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 0.26 seconds (JVM running for 3785.211)
+2021-04-14 13:38:31 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-14 13:39:42 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 14:35:38 [http-nio-9686-exec-5] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 14:40:37 [http-nio-9686-exec-7] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 14:41:55 [http-nio-9686-exec-1] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 14:42:30 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 14:46:44 [http-nio-9686-exec-5] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 15:25:53 [http-nio-9686-exec-7] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 16:04:29 [http-nio-9686-exec-1] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 16:10:35 [http-nio-9686-exec-4] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 17:25:16 [http-nio-9686-exec-8] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 17:31:29 [http-nio-9686-exec-9] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 17:34:05 [http-nio-9686-exec-3] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 17:35:41 [http-nio-9686-exec-5] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 17:57:53 [http-nio-9686-exec-10] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 17:59:07 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 18:00:34 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 14380 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-14 18:00:34 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-14 18:00:34 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@e35d33d
+2021-04-14 18:00:34 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 0.314 seconds (JVM running for 19508.409)
+2021-04-14 18:00:34 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-14 18:00:39 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 14380 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-14 18:00:39 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-14 18:00:39 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@1667ef42
+2021-04-14 18:00:39 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 0.319 seconds (JVM running for 19512.784)
+2021-04-14 18:00:39 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-14 18:01:00 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 18:05:11 [http-nio-9686-exec-5] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 18:05:43 [http-nio-9686-exec-6] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 18:11:16 [http-nio-9686-exec-9] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 18:13:04 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 18:14:22 [http-nio-9686-exec-5] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 18:16:09 [http-nio-9686-exec-8] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 18:21:11 [http-nio-9686-exec-1] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 18:22:38 [http-nio-9686-exec-4] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 18:23:04 [http-nio-9686-exec-5] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 18:25:28 [http-nio-9686-exec-8] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 19:47:08 [http-nio-9686-exec-1] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 19:47:49 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 19:48:12 [http-nio-9686-exec-3] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 19:50:13 [http-nio-9686-exec-6] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 19:51:27 [http-nio-9686-exec-9] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 19:53:39 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 19:53:43 [http-nio-9686-exec-3] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-14 19:53:48 [http-nio-9686-exec-4] INFO  c.vinodh.controller.AuditController -addUser save in verison :

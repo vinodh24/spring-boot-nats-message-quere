@@ -1,0 +1,11 @@
+# Application Config
+spring:
+  application:
+    name: audit-service
+  
+
+     
+server:  port: 9686
+  
+  
+  

@@ -1,0 +1,66 @@
+2021-04-15 11:20:49 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 11696 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-15 11:20:50 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-15 11:20:53 [restartedMain] ERROR com.vinodh.config.NatsInilizer -Error connecting to NATs! 
+java.io.IOException: nats: no servers available for connection
+	at io.nats.client.ConnectionImpl.connect(ConnectionImpl.java:437)
+	at io.nats.client.Options.connect(Options.java:212)
+	at io.nats.client.Nats.connect(Nats.java:429)
+	at com.vinodh.config.NatsInilizer.initConnection(NatsInilizer.java:30)
+	at com.vinodh.config.NatsInilizer.afterPropertiesSet(NatsInilizer.java:40)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at com.vinodh.application.SpringDataBaseApplication.main(SpringDataBaseApplication.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-04-15 11:20:53 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 4.065 seconds (JVM running for 6.784)
+2021-04-15 11:20:53 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-15 11:21:55 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 12864 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-15 11:21:55 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-15 11:21:56 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@6b265a01
+2021-04-15 11:21:57 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 1.601 seconds (JVM running for 2.894)
+2021-04-15 11:21:57 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-15 11:25:25 [http-nio-9686-exec-1] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 11:27:30 [http-nio-9686-exec-5] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 11:28:17 [http-nio-9686-exec-6] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 11:29:29 [http-nio-9686-exec-9] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 11:33:09 [http-nio-9686-exec-1] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 11:33:56 [http-nio-9686-exec-3] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 11:35:54 [http-nio-9686-exec-6] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 13:11:36 [http-nio-9686-exec-8] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 13:14:07 [http-nio-9686-exec-1] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 13:15:15 [http-nio-9686-exec-5] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 13:18:45 [http-nio-9686-exec-7] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 13:30:50 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 12864 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-15 13:30:50 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-15 13:30:50 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@4097068c
+2021-04-15 13:30:50 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 0.385 seconds (JVM running for 7736.271)
+2021-04-15 13:30:50 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-15 13:32:07 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Starting SpringDataBaseApplication on R067 with PID 13856 (D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher\target\classes started by vinodh.sangavaram in D:\Microservices\Examples-microservice-alltaks\nats\audit-service-nats-publisher)
+2021-04-15 13:32:07 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -No active profile set, falling back to default profiles: default
+2021-04-15 13:32:08 [restartedMain] INFO  com.vinodh.config.NatsInilizer -Connected Nats Server... io.nats.client.ConnectionImpl@69f9b0ad
+2021-04-15 13:32:09 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -Started SpringDataBaseApplication in 1.549 seconds (JVM running for 2.756)
+2021-04-15 13:32:09 [restartedMain] INFO  c.v.a.SpringDataBaseApplication -server started successfully....
+2021-04-15 13:32:33 [http-nio-9686-exec-1] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 13:39:12 [http-nio-9686-exec-5] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 13:39:29 [http-nio-9686-exec-6] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 13:39:30 [http-nio-9686-exec-7] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 16:55:51 [http-nio-9686-exec-10] INFO  c.vinodh.controller.AuditController -addUser save in verison :
+2021-04-15 16:56:08 [http-nio-9686-exec-2] INFO  c.vinodh.controller.AuditController -addUser save in verison :

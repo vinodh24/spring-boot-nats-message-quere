@@ -1,0 +1,27 @@
+db:
+  active:
+    ipaddress: 10.0.13.70 
+  database: orcl.blr.velankani.com
+  port: 1521
+  username: consolidated##alarm
+  password: eagger
+ 
+app:
+  version:0.0.1
+ 
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@${db.active.ipaddress}:${db.port}/${db.database}
+    username: ${db.username}
+    password: ${db.password}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+         dialect: org.hibernate.dialect.Oracle9Dialect
+
+ 
+

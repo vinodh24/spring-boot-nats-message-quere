@@ -1,0 +1,11 @@
+# Application Config
+spring:
+  application:
+    name: audit-service-subscriber-two
+  profiles:
+    active:
+     - postgres
+     #- oracle  
+     
+server:
+  port: 9688

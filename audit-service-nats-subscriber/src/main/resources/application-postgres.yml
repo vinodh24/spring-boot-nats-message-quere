@@ -1,0 +1,25 @@
+db:
+  active:
+    ipaddress: 10.0.16.122 
+  database: consolidated-auth
+  port: 5432
+  username: consolidated
+  password: consolidated123
+  
+application:
+   version:0.0.1
+ 
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${db.active.ipaddress}:${db.port}/${db.database}
+    username: ${db.username}
+    password: ${db.password}
+  jpa:
+      hibernate:
+        ddl-auto: update
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+        show_sql: true
+      properties.hibernate.temp.use_jdbc_metadata_defaults: false
+ 
+
